@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Dice from "./Dice"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    return (
+        <>
+            <div className="tenzies">
+                <div className="active">
+                    <h1 className="game-name">Tenzies</h1>
+                    <p className="game-desc">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
+                      <Dice/>
+                      <Dice/>
+                    <button>Roll</button>
+                </div>
+            </div>
+        </>
+    )
 }
-
-export default App;
