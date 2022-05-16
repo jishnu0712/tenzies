@@ -1,16 +1,7 @@
 import React from "react"
 
-export default function Dice() {
+export default function Dice(props) {
     return (
-        <div className="dice-board">
-
-            <div className="dice"></div>
-            <div className="dice"></div>
-            <div className="dice"></div>
-            <div className="dice"></div>
-            <div className="dice"></div>
-
-        </div>
+            <div className="dice">{props.number}</div>
     )
-
 }
